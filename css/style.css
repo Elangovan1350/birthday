@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+div{
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(45deg,#ffcc00,#ff0c5a ,aqua);
+    background-size: 400%;
+    animation: gradient 10s  infinite;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+.elango{
+    
+    animation: gradients 10s  infinite;
+    
+}
+@keyframes gradients {
+    0%{
+        background-position: 0% 50%;
+        z-index: 2;  
+    }
+    33%{
+        background-position: 100% 50%;
+        z-index: 2;
+        
+        transform: rotate(70deg);
+        border-radius: 50px; 
+    }
+    45%{
+        transform: scale(1.1);   
+    }
+    49.5%{
+        z-index: 0;
+    }
+    66%{
+        transform: rotate(-70deg);
+    }
+    
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;  
+    }
+    33%{
+        background-position: 100% 50%;
+        transform: rotate(70deg);
+        border-radius: 50px; 
+    }
+    45%{
+        transform: scale(1.1); 
+    }
+    66%{
+        transform: rotate(-70deg);
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: poppins;
+    user-select: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px gray;
+    font-weight: 700;
+    color: whitesmoke;
+}
